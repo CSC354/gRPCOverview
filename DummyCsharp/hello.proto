@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+option go_package = "./goservices";
+option csharp_namespace = "Csharp_Services";
+
+package services;
+
+service RouteGuide {
+	rpc GetHello(Hello) returns (Hello) {}
+}
+
+message Hello {
+	string hello = 1;
+}
